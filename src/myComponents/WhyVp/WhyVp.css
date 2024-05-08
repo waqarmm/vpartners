@@ -1,0 +1,83 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.why-vp {
+  width: 100%;
+  height: 90vh;
+  /* background-color: #908e34;
+   */
+   box-shadow: rgba(0, 0, 0, 0.06) 0px 12px 14px 0px inset;
+     margin-top: 80px;
+  margin-bottom: 100px;
+}
+.why-vp-icons{
+    display: flex;
+
+    width: 100%;
+    height:80% ;
+    /* background-color: #9b4141; */
+    justify-content: space-around;
+    align-items: center;
+    font-weight: lighter;
+}
+
+.why-vp-heading{
+    /* background-color: #5165c0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+}
+.durable, .circular, .natural-heating, .health{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;  
+      /* border: 1px solid black; */
+    width: 24%;
+    text-align: center;
+    height: 98%;
+    font-size: 70px;
+} 
+.health h6,.circular h6, .durable h6, .natural-heating h6{
+    margin: 25px 0 0 0;
+    font-size: 19px;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 100; 
+}
+.health p,.circular p, .durable p, .natural-heating p{
+    font-size: 16px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    line-height: 35px;
+    color: rgb(130, 126, 126);
+    margin: 10px auto;
+    width: 90%;
+}
+
+
+
+
+
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .why-vp-icons {
+        flex-wrap: wrap;
+    }
+    
+    .durable, .circular, .natural-heating, .health {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .durable, .circular, .natural-heating, .health {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
