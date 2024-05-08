@@ -6,11 +6,10 @@ import { faHouseFire } from "@fortawesome/free-solid-svg-icons";
 import { faHeartPulse } from "@fortawesome/free-solid-svg-icons";
 import "../WhyVp/WhyVp.css";
 function Whyvp() {
-  return (
-    <div className="container">
+  return ( 
       <div className="why-vp">
         <div className="why-vp-heading">
-          <p>Why Choose Visionary Partners?</p>
+          <h1>Why Choose Visionary Partners?</h1>
         </div>
         <div className="why-vp-icons">
           <div className="durable">
@@ -52,8 +51,7 @@ function Whyvp() {
             </p>
           </div>
         </div>
-      </div>
-    </div>
+      </div> 
   );
 }
 

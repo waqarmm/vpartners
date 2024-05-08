@@ -2,12 +2,12 @@ import React from 'react'
 import { Card, CardContent, Typography } from "@mui/material";
 import ImgOne from "../appBar/assets/imgo.jpg";
 import ImgTwo from "../appBar/assets/imgtow.jpg";
-import "../VisitOurShowroom/visit.css";
+import "../VisitOurShowroom/visit.css"
 
 const visit = () => {
   return (
     <div style={{ textAlign: "center" }}>
-        <h1 style={{ fontWeight: "lighter", marginTop: "50px" }}>Visit Our Showroom</h1>
+        <h1 style={{ fontWeight: "lighter", marginTop: "50px", fontFamily:"'Roboto', sans-serif" }}>Visit Our Showroom</h1>
         {/* <p style={{ fontWeight: "lighter", marginTop: "20px" }}>
           Do you have questions? Call, email or visit us for a no-obligation
           consultation in one of our showrooms.
@@ -46,7 +46,7 @@ const visit = () => {
               <Typography variant="body2" color="textSecondary" component="p">
                 <h3 className="yu">ALPHEN AAN DEN RIJN</h3>
                 <p>Euromarkt 113</p>
-                <p>Visit Us </p>
+                <p>Visit Us →</p>
                 
               </Typography>
             </CardContent>
@@ -77,7 +77,7 @@ const visit = () => {
               <Typography variant="body2" color="textSecondary" component="p">
               <h3 className="yu">ALPHEN AAN DEN RIJN</h3>
                 <p>Euromarkt 113</p>
-                <p>Visit Us </p>
+                <p>Visit Us →</p>
               </Typography>
             </CardContent>
           </Card>

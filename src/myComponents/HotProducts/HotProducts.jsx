@@ -11,28 +11,27 @@ import proimgseven from "../HotProducts/assets/productimgseven.jpg";
 import proimgeight from "../HotProducts/assets/productimgeight.jpg";
 import proimgnine from "../HotProducts/assets/productimgnine.jpg";
 function HotProducts() {
-  return (
-    <div className="container">
+  return ( 
       <div className="hot-products">
         <div className="hot-products-heading">
-          <p>Check out our hot products</p>
+          <h1>Check out our hot products</h1>
         </div>
         <div className="hot-products-items">
           <ProductCard
             productimage={proimgone}
             productdescription="Chinese manufacturer providing high quality and stable price of wpc wall cladding"
           />
-          <ProductCard productimage={proimgtwo} productdescription="Chinese manufacturer providing high quality and stable price of wpc wall cladding"/>
-          <ProductCard productimage={proimgthree}  productdescription="Chinese manufacturer providing high quality and stable price of wpc wall cladding"/>
-          <ProductCard productimage={proimgfour} productdescription="Chinese manufacturer providing high quality and stable price of wpc wall cladding"/>
-          <ProductCard productimage={proimgfive}productdescription="Chinese manufacturer providing high quality and stable price of wpc wall cladding" />
-          <ProductCard productimage={proimgsix} productdescription="Chinese manufacturer providing high quality and stable price of wpc wall cladding"/>
-          <ProductCard productimage={proimgseven}productdescription="Chinese manufacturer providing high quality and stable price of wpc wall cladding" />
-          <ProductCard productimage={proimgeight} productdescription="Chinese manufacturer providing high quality and stable price of wpc wall cladding"/>
-          <ProductCard productimage={proimgnine} productdescription="Chinese manufacturer providing high quality and stable price of wpc wall cladding"/>
+          <ProductCard productimage={proimgtwo} productdescription="Visionary_Products providing high quality and stable price of wpc wall cladding"/>
+          <ProductCard productimage={proimgthree}  productdescription="Visionary_Products providing high quality and stable price of wpc wall cladding"/>
+          <ProductCard productimage={proimgfour} productdescription="Visionary_Products providing high quality and stable price of wpc wall cladding"/>
+          <ProductCard productimage={proimgfive}productdescription="Visionary_Products providing high quality and stable price of wpc wall cladding" />
+          <ProductCard productimage={proimgsix} productdescription="Visionary_Products providing high quality and stable price of wpc wall cladding"/>
+          <ProductCard productimage={proimgseven}productdescription="Visionary_Products providing high quality and stable price of wpc wall cladding" />
+          <ProductCard productimage={proimgeight} productdescription="Visionary_Products providing high quality and stable price of wpc wall cladding"/>
+          <ProductCard productimage={proimgnine} productdescription="Visionary_Products providing high quality and stable price of wpc wall cladding"/>
         </div>
       </div>
-    </div>
+       
   );
 }
 

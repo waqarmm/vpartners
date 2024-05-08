@@ -1,62 +1,57 @@
 .product-card{
-    height: 60vh;
-    width: 100%; 
-    /* background-color: red; */
-  }
-  .pro-card-img{
-    height: 80%;
-    width: 100%; 
-  
-    position: relative; /* Positioning context for the pseudo-element */
-    display: inline-block; /* Ensure container only takes the space of its content */
-    overflow: hidden; /* Hide overflowing content */
-  }
-  
-  .pro-card-img:hover::after {
-    color: white; /* Change color of the plus sign on hover */
-    opacity: 1; /* Make plus sign visible on hover */
-  }
-  .pro-card-img:hover img {
-    filter: blur(2px); /* Blur image on hover */
-  }
-  
-  .pro-card-img img {
-    display: block; /* Make sure image behaves as a block element */
-    max-width: 100%; /* Ensure image doesn't exceed container width */
-    height: auto; /* Maintain aspect ratio */
-    transition: filter 0.2s ease; /* Smooth transition for image blur */
-  }
-  .pro-card-img::after {
-    content: "+"; /* Plus sign content */
-    position: absolute; /* Position the plus sign relative to the container */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center the plus sign precisely */
-    font-size: 3em; /* Adjust the size of the plus sign */
-    color: transparent; /* Initially transparent */
-    opacity: 0; /* Initially invisible */
-    transition: opacity 0.3s ease; /* Smooth transition effect */
-  }
-  .pro-card-img img{
-    width: 100%;
-    height: 100%; 
-    border-radius: 5px ;
-  
-  }
-  .pro-card-text{
-    height: 20%;
-    width: 100%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    /* background-color: red;  */
-    font-weight: 100;
-  }
-  .pro-card-text p{
-    padding-top: 20px;
-    margin: 0;
-    color: rgb(61, 48, 48);
-  }
+  height: 60vh;
+  width: 100%;  
+}
+.pro-card-img{
+  height: 80%;
+  width: 100%; 
+
+  position: relative;  
+  display: inline-block;  
+  overflow: hidden;  
+}
+
+.pro-card-img:hover::after {
+  color: white;  
+  opacity: 1;  
+}
+.pro-card-img:hover img {
+  filter: blur(2px); 
+}
+
+.pro-card-img img {
+  display: block;  
+  max-width: 100%;  
+  height: auto;  
+  transition: filter 0.2s ease;  
+}
+.pro-card-img::after {
+  content: "+";  
+  position: absolute;  
+  top: 50%;  
+  left: 50%;  
+  transform: translate(-50%, -50%);  
+  font-size: 3em;  
+  color: transparent;  
+  opacity: 0;  
+  transition: opacity 0.3s ease;  
+}
+.pro-card-img img{
+  width: 100%;
+  height: 100%; 
+  border-radius: 5px ;
+
+}
+.pro-card-text{
+  height: 20%;
+  width: 100%; 
+  font-size: large;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center; 
+  font-weight: 100;
+}
+.pro-card-text p{
+  padding-top: 20px;
+  margin: 0;
+  color: rgb(61, 48, 48);
+}

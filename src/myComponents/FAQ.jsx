@@ -20,7 +20,7 @@ export default function FAQ() {
     <Container
       id="faq"
       sx={{
-        width:'55%',
+        width:'60%',
         pt: { xs: 4, sm: 12 },
         pb: { xs: 8, sm: 16 },
         position: 'relative',
@@ -51,7 +51,7 @@ export default function FAQ() {
             aria-controls="panel1d-content"
             id="panel1d-header"
           >
-            <Typography component="h4" variant="subtitle2">
+            <Typography component="h3" variant="subtitle2">
               How do I contact customer support if I have a question or issue?
             </Typography>
           </AccordionSummary>

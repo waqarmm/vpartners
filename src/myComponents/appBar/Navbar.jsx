@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { OutlinedInput } from "@mui/material";
 import InputAdornment from "@mui/material/InputAdornment";
-import "../appBar/Navbar.css"
+import "../appBar/Navbar.css";
 
 import { Link } from "react-router-dom";
 import {
@@ -42,6 +42,10 @@ const Navbar = () => {
 
   const handleSearchToggle = () => {
     setSearchOpen(!searchOpen);
+    // If search is being closed, show the main items (hamburger, logo, search icon)
+    if (searchOpen) {
+      setDrawerOpen(false);
+    }
   };
 
   const handleInputChange = (event) => {
@@ -58,9 +62,10 @@ const Navbar = () => {
       [index]: !prevState[index],
     }));
   };
+
   const appBarStyles = {
-    width:"100%",
-    height:'12.2vh',
+    width: "100%",
+    height: "13.2vh",
     position: drawerOpen ? "sticky " : "static",
     top: drawerOpen ? "0" : "unset",
     zIndex: 2,
@@ -112,60 +117,64 @@ const Navbar = () => {
               <SearchIcon />
             </IconButton>
           )}
-        </Toolbar>
-        {searchOpen && (
-          <Box
-            sx={{
-              position:"relative",
-              // marginBottom:'4%',
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <OutlinedInput
-              sx={{ width: "45%", height: 32, borderRadius: "10px" }}
-              placeholder="Search"
-              value={searchText}
-              onChange={handleInputChange}
-              startAdornment={
-                <InputAdornment position="start">
-                  <SearchIcon />
-                </InputAdornment>
-              }
-              endAdornment={
-                <InputAdornment position="end">
-                  <IconButton onClick={handleClearSearchText}>
-                    <CloseIcon />
-                  </IconButton>
-                </InputAdornment>
-              }
-              inputProps={{ "aria-label": "search" }}
-              label="Search"
-            />
+          {/* Close Icon for Search Input */}
+          {searchOpen && (
             <IconButton
-              style={{ marginLeft: 10 }}
+              style={{ marginLeft: "auto" }}
               color="black"
-              aria-label="search"
+              aria-label="close-search"
               onClick={handleSearchToggle}
             >
               <CloseIcon />
             </IconButton>
-          </Box>
-        )}
+          )}
+        </Toolbar>
+        {/* Box for Search Input */}
+        <Box
+          sx={{
+            position: "absolute",
+            left: "70%",
+            transform: "translateX(-50%)",
+            width:'80%',
+            top: "5%",
+            display: searchOpen ? "flex" : "none",
+            alignItems: "center",
+          }}
+        >
+          <OutlinedInput
+            sx={{ width: "45%", height: 32, borderRadius: "10px" }}
+            placeholder="Search"
+            value={searchText}
+            onChange={handleInputChange}
+            startAdornment={
+              <InputAdornment position="start">
+                <SearchIcon />
+              </InputAdornment>
+            }
+            endAdornment={
+              <InputAdornment position="end">
+                <IconButton onClick={handleClearSearchText}>
+                  <CloseIcon />
+                </IconButton>
+              </InputAdornment>
+            }
+            inputProps={{ "aria-label": "search" }}
+            label="Search"
+          />
+        </Box>
       </AppBar>
-
-      <Drawer
+      {/* Rest of your Drawer content */}
+    <Drawer
         anchor="left"
         open={drawerOpen}
         onClose={handleDrawerClose}
         PaperProps={{
           sx: {
-            marginTop: {lg:'5.4%', xs:'10.9%',sm:'4.5%'},
+            marginTop: { lg: "5.8%", xs: "10.9%", sm: "4.5%" },
             zIndex: "0",
             position: "fixed",
             boxShadow: "none",
-            width: {xl:'28%',lg:"30%" ,xs:'100%',sm:'55%'},
+            width: { xl: "28%", lg: "30%", xs: "100%", sm: "55%" },
             height: "99%",
             backgroundColor: "white",
           },
@@ -249,7 +258,10 @@ const Navbar = () => {
                 to="/marble-sheet/thermal-transfer-printing"
                 onClick={handleDrawerClose}
               >
-                <ListItemText className="av" primary="Thermal Transfer Printing" />
+                <ListItemText
+                  className="av"
+                  primary="Thermal Transfer Printing"
+                />
               </ListItem>
               <ListItem
                 button
@@ -257,7 +269,7 @@ const Navbar = () => {
                 to="/marble-sheet/embossed"
                 onClick={handleDrawerClose}
               >
-                <ListItemText  primary="Embossed" />
+                <ListItemText primary="Embossed" />
               </ListItem>
               <ListItem
                 button
@@ -307,7 +319,10 @@ const Navbar = () => {
                 to="/marble-sheet/thermal-transfer-printing"
                 onClick={handleDrawerClose}
               >
-                <ListItemText className="av" primary="Thermal Transfer Printing" />
+                <ListItemText
+                  className="av"
+                  primary="Thermal Transfer Printing"
+                />
               </ListItem>
               <ListItem
                 button
@@ -323,7 +338,7 @@ const Navbar = () => {
                 to="/marble-sheet/pvc-film"
                 onClick={handleDrawerClose}
               >
-                 <ListItemText className="av" primary="PVC Film" />
+                <ListItemText className="av" primary="PVC Film" />
               </ListItem>
               <ListItem
                 button
@@ -405,5 +420,6 @@ const Navbar = () => {
     </>
   );
 };
+  
 
 export default Navbar;

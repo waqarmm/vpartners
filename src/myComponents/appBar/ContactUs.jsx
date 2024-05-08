@@ -10,10 +10,13 @@ import AnnouncementBar from "../Annoucement-bar/AnnouncementBar";
 const ContactUs = () => {
   return (
     <>
-        <AnnouncementBar/>
+      <AnnouncementBar />
+      <div className="container" style={{width:"80%", margin:" 0px auto"}}>
+
+      
       <div style={{ textAlign: "center" }}>
-        <h1 style={{ fontWeight: "lighter", marginTop: "50px" }}>CONTACT</h1>
-        <p style={{ fontWeight: "lighter", marginTop: "20px" }}>
+        <h1 style={{ fontWeight: "lighter", marginTop: "50px" , fontFamily:"'Roboto', sans-serif" }}>CONTACT</h1>
+        <p style={{ fontWeight: "lighter", marginTop: "20px" , fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif"}}>
           Do you have questions? Call, email or visit us for a no-obligation
           consultation in one of our showrooms.
         </p>
@@ -90,11 +93,9 @@ const ContactUs = () => {
             </CardContent>
           </Card>
         </div>
+      </div> 
       </div>
-      <div className="bbb"></div>
-      <FAQ />
-
-      <div className="aaa"></div>
+      <FAQ /> 
       <Footer />
     </>
   );

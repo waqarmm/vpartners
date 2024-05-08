@@ -29,25 +29,36 @@ function Copyright() {
 
 export default function Footer() {
   return (
-    <Container
-      sx={{
-        width: '100%',
-        minHeight: '100vh',
-        display: 'flex',
+    <Box 
+    sx={{ 
+      
+      backgroundColor: '#f5f5f5',
+      padding: '20px', // Example padding
+    }}>
+    
+    <Box
+      sx={{ 
+
+        width: "80%",
+        display: 'flex',  marginTop: 0,  
+        marginBottom: 0,  
+        marginLeft: 'auto',  
+        marginRight: 'auto',  
         flexDirection: 'column',
         alignItems: 'center',
-        backgroundColor: '#f5f5f5',
-        py: { xs: 1, sm: 4 },
-        textAlign: { sm: 'center', md: 'left' },
+        py: { xs: 2, sm: 4 },
+        textAlign: { sm: 'center', md: 'left' }, 
       }}
     >
       <Box
-        style={{
+        sx={{
           width: '100%',
           display: 'flex',
           flexDirection: { xs: 'column', sm: 'row' },
           justifyContent: 'space-between',
           flexWrap: 'wrap',
+           
+
         }}
       >
         <Box
@@ -60,14 +71,14 @@ export default function Footer() {
           }}
         >
           <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
-            {/* <Box sx={{ ml: '-15px' }}>
-              { <img
-              src={logoImg} 
+            <Box sx={{ ml: '-15px' }}>
+              {/* <img
+            //    src={logoImg} 
                 style={logoStyle}
                 alt="logo of sitemark"
-              /> }
-              <h3 style={{color:"green"}}>Visionary_Partners</h3>
-            </Box> */}
+              /> */}
+              {/* <h3 style={{color:"green"}}>Visionary_Partners</h3> */}
+            </Box>
             <Box style={{ width: "100%", display: 'flex', justifyContent: "space-between" }}>
               <Box
                 sx={{
@@ -194,7 +205,7 @@ export default function Footer() {
         </Box>
       </Box>
       <Box width="100%" display="flex" justifyContent="center" mt={{ xl: '6%', lg: '6%', xm: '5%', sm: '5%' }}>
-        <Box textAlign="center" display='flex' alignItems='center' flexWrap='wrap' width={{ xl: '60%', lg: '70%', xm: '98%', sm: '98%' }}>
+        <Box textAlign="center" display='flex' alignItems='center' flexWrap='wrap' width={{ xl: '60%', lg: '100%', xm: '98%', sm: '98%' }}>
           <Copyright />
           <Typography display="inline" sx={{ mx: 0.5, opacity: 0.5 }}>
             &nbsp;•&nbsp;
@@ -222,6 +233,7 @@ export default function Footer() {
           </Link>
         </Box>
       </Box>
-    </Container>
+    </Box>
+    </Box>
   );
 }

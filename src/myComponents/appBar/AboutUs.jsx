@@ -1,16 +1,15 @@
 import React from "react";
 import "../appBar/AboutUs.css";
 import Footer from "../footer";
-import aboutone from "../appBar/AboutAssests/aboutone.jpg"
-import abouttwo from "../appBar/AboutAssests/abouttwo.jpg"
-import aboutthree from "../appBar/AboutAssests/aboutthree.jpg"
-import aboutfour from "../appBar/AboutAssests/aboutfour.jpeg" 
-
+import aboutone from "../appBar/AboutAssests/aboutone.jpg";
+import abouttwo from "../appBar/AboutAssests/abouttwo.jpg";
+import aboutthree from "../appBar/AboutAssests/aboutthree.jpg";
+import aboutfour from "../appBar/AboutAssests/aboutfour.jpeg";
+import FAQ from "../FAQ";
 
 function AboutUs() {
   return (
-   <>
-    <div className="container">
+    <>
       <div className="about-sec">
         <div className="about">
           <h1>About us</h1>
@@ -31,7 +30,9 @@ function AboutUs() {
           </p>
         </div>
         <div className="our-values">
-            <div className="our-value-heading"><h1>Our Values</h1></div>
+          <div className="our-value-heading">
+            <h1>Our Values</h1>
+          </div>
           <div className="Integrity">
             <div className="Integrity-img">
               <img src={aboutone} alt="" />
@@ -46,7 +47,7 @@ function AboutUs() {
             </div>
           </div>
           <div className="Quality">
-          <div className="Quality-des">
+            <div className="Quality-des">
               <h1>Quality</h1>
               <p>
                 We are committed to delivering PVC panels of the finest quality,
@@ -57,7 +58,6 @@ function AboutUs() {
             <div className="Quality-img">
               <img src={abouttwo} alt="" />
             </div>
-           
           </div>
           <div className="Customer-Focus">
             <div className="Customer-Focus-img">
@@ -74,7 +74,7 @@ function AboutUs() {
             </div>
           </div>
           <div className="Innovation">
-          <div className="Innovation-des">
+            <div className="Innovation-des">
               <h1>Innovation</h1>
               <p>
                 We embrace innovation and continuously explore new technologies
@@ -86,23 +86,13 @@ function AboutUs() {
             <div className="Innovation-img">
               <img src={aboutfour} alt="" />
             </div>
-            
-           
           </div>
-         
           <div className="eee"></div>
-          < Footer/> 
         </div>
-        
       </div>
-      
-    </div>
-
-   
-
-   
-   </>
-    
+      <FAQ />
+      <Footer />
+    </>
   );
 }
 
