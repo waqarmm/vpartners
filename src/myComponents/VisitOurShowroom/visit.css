@@ -1,0 +1,16 @@
+.yu{
+    text-transform: capitalize;
+  }
+  p{
+    padding: 10px;
+    font-size: 17px;
+  }
+  .aaa{height: 10vh; width: 100%;}
+  
+   @media  only screen and (max-width: 500px){
+    .con-card{
+      display: block;
+      width: 80%;
+      background-color: #b92020;
+    }   
+   }

@@ -1,0 +1,17 @@
+.announcement-bar {
+    background-color: rgba(4, 4, 250, 0.493); /* Background color */
+    height: 7vh; /* Height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Change cursor to pointer when hovering over the bar */
+  }
+  
+  .announcement-bar p {
+    margin: 0;
+    padding: 10px;
+    text-align: center; /* Center-align text */
+    color: #ffffff; /* Text color */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
