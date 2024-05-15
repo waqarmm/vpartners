@@ -2,7 +2,6 @@ import React, {useState} from "react"
 import {OutlinedInput} from "@mui/material"
 import InputAdornment from "@mui/material/InputAdornment"
 import "../appBar/Navbar.css"
-
 import {Link} from "react-router-dom"
 import {
   AppBar,
